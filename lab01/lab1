@@ -1,0 +1,23 @@
+Q2)I see the files 'funny','hello.bash','lab1.txt',and 'vi_lab'
+
+Q3)I give myself r&w, and read access to everyone else
+
+Q4)I give myself all permissions and everyone else gets r&e permissions
+
+Q5)Yes
+
+Q6)Yes
+
+Q7)No, Permission was denied
+
+Q8)I could give permissions with chmod using 7xx or 5xx
+
+Q9)Changes could not be saved becasue i did not have write permissions
+
+Q10)ls * : Displays all files in the directory
+    ls a*: Displays files that begin with a
+    ls *m*: Displays files containing the letter m
+    ls anno?:Displays annoy file
+    ls annoy?:Throws exception "No such file or directory"
+
+Q11)A file named 'a' was created

@@ -1,0 +1,50 @@
+Q1) add() adds a prefix addSuffix() adds the Suffix
+
+Q2) It looks to see if a prefix already exists; add() and generate()
+
+Q3)	Prefix		Suffix
+	(Null)(Null)	It'S
+	(Null) It's	a
+	It's  a		new new
+	a     new    	dawn It's
+	new   dawn      Its a
+It's : 4
+a    : 4
+new  : 4
+dawn : 2
+
+Q4)Everything gets looked at the same amount of times except the last word
+
+Q5)First 2 steps have little to no use
+
+Q6) void clean(statetab)
+    {
+	for (i=0; i<NHASH; i++)
+		
+		free(statetab[i[)
+    }
+
+Q7) Of course not, I dont know how to write in C well
+
+Q8) mabye add in another loop and learn C
+
+Q9) In deques, so we can acces the data from the top and bottom 
+
+Q10) A map
+
+Q11) In vectors
+
+Q12)Yes, It would use less code
+
+Q13) It would take longer
+
+
+Q14) in the dictionary keys
+
+Q15) A dictionary
+
+Q16)As each key is listed
+
+Q17) It is faster to write the code
+
+Q18) It is slower than C to run

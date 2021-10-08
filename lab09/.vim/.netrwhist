@@ -1,0 +1,9 @@
+let g:netrw_dirhistmax  =10
+let g:netrw_dirhist_cnt =7
+let g:netrw_dirhist_1='/home/tpm53/CS265/Git/lab01'
+let g:netrw_dirhist_2='/home/tpm53/CS265/Git/lab02'
+let g:netrw_dirhist_3='/home/kschmidt/public_html/CS265/Assignments/PostFixCalc'
+let g:netrw_dirhist_4='/home/tpm53/CS265/Assignment1'
+let g:netrw_dirhist_5='/home/tpm53/CS265/Git/lab07/C-Markov'
+let g:netrw_dirhist_6='/home/tpm53/CS265/Assignment1'
+let g:netrw_dirhist_7='/home/tpm53/CS265/Assign1/CS265'

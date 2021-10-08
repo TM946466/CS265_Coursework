@@ -1,0 +1,18 @@
+Q1.1) i) Do not show the user what is happening behind the scenes,
+         they do not need to know variable names etc.
+      ii) Avoid redundant functions (Functions that do the same thing)
+      iii) Do not make changes unless you have told the user you will do so
+      iv) Always stick to the same format. If you add be fore you subtract
+          always do it in that order etc.
+
+Q1.2) Maximum 199 characters in a line with a max of 20 fields
+
+Q1.3)No more max characters or fields, added split function, added function to       check for end of line, can now obtain number of fields
+
+Q1.4)Cannot parse through more than one csv file
+
+Q1.5)Yes, I cannot determine any other issues
+
+Q1.6) Yes, implimentation details are hidden primatives are small and orthogonal      , It does not reach behind the users back and it does the same thing            everywhere
+
+

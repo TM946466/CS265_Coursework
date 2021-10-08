@@ -1,0 +1,21 @@
+Q1)$ egrep the bright_side_of_life
+
+Q2)$ egrep '/<the/>' bright_side_of_life
+
+Q3)$ egrep '/<Just>/' bright_side_of_life 
+
+Q4)$ egrep '/<[Jj]ust/>' bright_side_of_life
+
+Q1.5) $ egrep '^/<[Jj]ust/>' bright_side_of_life
+
+Q1.6) $ egrep '/<[bm]ad/>' bright_side_of_life
+
+Q1.7) $ egrep '/<(br|d)eath/>' bright_side_of_life
+
+Q1.8) $ egrep 'you(\.|\,)$' bright_side_of_life
+
+Q1.9) $ egrep '^[[:blank:]]' bright_side_of_life
+
+Q1.10) $ egrep  ^$ bright_side_of_life
+
+Q1.11) 10

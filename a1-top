@@ -1,0 +1,87 @@
+#!/bin/bash
+ 
+if [[ -n "$1" ]]; then
+	cd "$1"
+fi
+
+for f in $(find . -type d) ; do
+	myVar="${f#*.}"
+	readMe="$PWD$myVar/README"
+	curDir="$PWD$myVar"	
+	echo "$curDir"
+	if [ -e "$curDir/dir.xml" ] ; then
+		rm "$curDir/dir.xml"
+	fi
+	echo '<?xml version="1.0" encoding="ISO-8859-1"?> ' >>  "$curDir/dir.xml"
+	echo "<direntry>" >> "$curDir/dir.xml"
+	
+	
+	
+	if [[ -e "$readMe" ]]; then
+		echo "Is Readme"
+		index=$(awk -F: '$1=="index" { print $2 }'  "$readMe")
+		req=$(awk -F: '$1=="required" { for ( i=2; i<=NF; i++)  print $i}' "$readMe")
+	fi
+	echo "	<index>" >> "$curDir/dir.xml"
+
+	
+	for i in $curDir/* ; do
+		
+		h="${i#*$curDir}"
+		j="${h#*/}"
+		if echo $index | grep -q "$j" ; then
+			
+			if [[ -d "$i" ]]; then
+				echo "		<dir>$j</dir>" >> "$curDir/dir.xml"
+			else
+				echo "		<file>$j</file>" >> "$curDir/dir.xml"
+			fi		         
+                        
+		fi
+		
+	done			 
+	echo "	</index>" >> "$curDir/dir.xml"
+	echo "  	<required>" >> "$curDir/dir.xml"
+
+#Do Required
+        for i in $curDir/* ; do
+
+                h="${i#*$curDir}"
+                j="${h#*/}"
+                if echo $req | grep -q "$j" ; then
+                        
+                        if [[ -d "$i" ]]; then
+                                echo "          <dir>$j</dir>" >> "$curDir/dir.xml"
+                        else
+                                echo "		<file>$j</file>" >> "$curDir/dir.xml"
+                        fi      
+                        
+                fi
+                
+        done                     
+        echo "	</required>" >> "$curDir/dir.xml"
+	echo "	<other>" >> "$curDir/dir.xml"
+
+#Now do other
+        for i in $curDir/* ; do
+
+                h="${i#*$curDir}"
+                j="${h#*/}"
+                if ! ( echo $index | grep -q "$j"  ||  echo $req | grep -q "$j" );  then
+                        
+                        if [[ -d "$i" ]]; then
+                                echo "          <dir>$j</dir>" >> "$curDir/dir.xml"
+                        else
+                        	if [ "$j" == "dir.xml" ]; then
+					continue
+				else
+				    echo "		<file>$j</file>" >> "$curDir/dir.xml"
+                       		fi
+			 fi      
+                        
+                fi
+                
+        done                     
+        echo "	</other>" >> "$curDir/dir.xml"      		
+	echo "</direntry>" >> "$curDir/dir.xml"
+done

@@ -1,0 +1,7 @@
+#!/bin/bash
+
+gcc -osign sign.c #complise sign.c
+./sign < /usr/share/dict/words | sort | awk -f squash.awk > out #Sorts all words
+awk '{print NF " " $0}' < out | sort -n | tail #Displays top 10 results ascending
+
+ 

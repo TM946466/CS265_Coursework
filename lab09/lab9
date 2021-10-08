@@ -1,0 +1,30 @@
+Q1) It says, "Segmentation fault (core dumped) and a dump file named core
+    is created
+
+Q2) It bombs in inTable() when accessed through main()
+
+Q3)a) Would not compile.
+      There was an issue with 'n' being passed by value instead of refrence.
+      Changed 'n' in line 7 to '&n'
+  
+   b) Would not compile.
+      Printf formatting issue %f and %d missmatched by type
+      Change formatting to match type i.e. %f for double %d for int
+
+   c) Error found on line 49 with incrimentation of variable numLines.
+      numLines incrimented before use.
+      Changed to incriment after use to resolve issue.
+
+   d) Would not Compile.
+      'n' being passed by value when it needs to be by reference.
+      Changed 'n' to '&n' to pass by reference and resolve issue.
+
+   e) I would trace the code starting wiht the function where the eror was            initially given and find that the pivot was not randomized
+      To assert this i could put a trace in that tells if the pivot 
+      has been changed.
+
+Q4) The compiler only catched simple syntax errors not coding logic errors
+
+Q5) The compiler will catch the error if it is syntax based 
+    The debugger should catch the error if it is a run time error.
+

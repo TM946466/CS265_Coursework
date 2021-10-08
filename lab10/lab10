@@ -1,0 +1,67 @@
+Q1)
+
+n	T(n)	   |		T(n) / f(n)		   |
+		    f(n)=n        f(n)=n^2     f(n)=nlog(n)
+
+10000  2.604       .2604E-3       2.604E-08      6.51E-05
+
+20000  5.945       .2973E-3       1.486E-08      6.91E-05
+
+30000  9.764	   .3255E-3       1.085E-08      7.27E-05
+
+40000  13.72       .3430E-3       .8575E-08      7.45E-05
+
+50000  17.753      .3550E-3       .7101E-08      7.56E-05
+
+60000  22.132      .3689E-3       .6148E-08      7.72E-05
+
+70000  26.392      .3770E-3       .5386E-08      7.78E-05
+  
+80000  31.436      .3930E-3       .4919E-08      8.01E-05
+
+90000  37.016      .4113E-3       .4570E-08      8.30E-05
+
+10000  42.282      .4228E-3       .4228E-08      8.46E-05
+
+
+
+f(n)=n gets progressivly smaller, f(n)=n^2 fits this pattern and represents it better so it appears to be the lower bound.
+f(n)=nlog(n) represents the upper bound as it aproaches infinity and looks better than the results of the log(n) function alone.
+
+(T(n) ∈ O(n^2),T(n) ∈ O(nlog(n)))
+
+
+
+
+Q2)
+
+n       T(n)       |            T(n) / f(n)                |
+                    f(n)=n        f(n)=n^2     f(n)=nlog(n)
+
+10000  2.604       .2604E-3       2.604E-08      6.51E-05
+
+20000  5.945       .2973E-3       1.486E-08      6.91E-05
+
+30000  9.764       .3255E-3       1.085E-08      7.27E-05
+
+40000  13.72       .3430E-3       .8575E-08      7.45E-05
+
+50000  17.753      .3550E-3       .7101E-08      7.56E-05
+
+60000  22.132      .3689E-3       .6148E-08      7.72E-05
+
+70000  26.392      .3770E-3       .5386E-08      7.78E-05
+
+80000  31.436      .3930E-3       .4919E-08      8.01E-05
+
+90000  37.016      .4113E-3       .4570E-08      8.30E-05
+
+10000  42.282      .4228E-3       .4228E-08      8.46E-05
+
+
+
+f(n)=n gets progressivly smaller, f(n)=n^2 fits this pattern as it aproaches 0 so it appears to be the lower bound.
+f(n)=nlog(n) represents the upper bound as it aproaches infinity and looks better than the results of the log(n) function alone.
+
+(T(n) ∈ O(n^2),T(n) ∈ O(nlog(n)))
+

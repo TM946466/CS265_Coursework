@@ -1,0 +1,33 @@
+Q1) ./Git/.git/COMMIT_EDITMSG
+./Git/lab02/lab2
+
+Q2)find . -type f -name "*.bash"
+
+Q3)./lab01/hello.bash
+./tmp/gotMe.bash
+
+Q4)Characters = 2960
+   Lines = 97
+   Words = 499
+
+Q5)Use grep to find the words in the file then pipe it to the wc -l command 
+   grep "the" breadIsDangerous.txt | wc -l
+
+Q6)There is now a file called spellExample.bak that contains the origional file contents before using ispell
+
+Q7)1c1 means that line 1 in the first file would need to be changed to match line 1 in the second file
+3c3 means the same thing except with line 3 in both files
+6d5 means that line 6 of the first file would need to be deleted to match line 5which is the last line in the second file.
+
+Q8)Nothing happens meaning nothing is different between the 2 files
+
+Q9)du * | sort -nr | head -n8
+
+Q10)0 dictates that a line was selected
+   1 dictates that no lines were selected
+   2 dictates that an error occured
+
+Q11.1) I used the checkout command (git checkout <First 5 Char of commit>)
+
+Q11.2) You can check the git logs
+`
